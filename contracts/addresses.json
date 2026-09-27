@@ -1,0 +1,9 @@
+{
+  "network": "ARC Testnet",
+  "chainId": 50178,
+  "deployer": "0x2f840F1e3AC2BC9170912dE992Cd90F181Dc3E32",
+  "weth": "0x189ef9CD40ede0ee8C57d004685139c95B8075D4",
+  "factory": "0x98F06b1cAc76846944fB6cBCD1fb3a73A97b830A",
+  "router": "0xFA643E697980844238c61E3c2B19fDCdb404d601",
+  "deployedAt": "2026-08-01T09:48:02.317Z"
+}

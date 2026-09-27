@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "ARC DEX"
+version = "1.0.0"
+id = "artifacts/arc-dex"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22163
+
+[services.development]
+run = "pnpm --filter @workspace/arc-dex run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/arc-dex", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/arc-dex/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22163"
+BASE_PATH = "/"

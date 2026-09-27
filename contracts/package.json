@@ -1,0 +1,14 @@
+{
+  "name": "sweetswap-contracts",
+  "version": "1.0.0",
+  "description": "Sweetswap V2 contracts deployer",
+  "private": true,
+  "scripts": {
+    "deploy": "node deploy.js"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0"
+  }
+}
